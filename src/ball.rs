@@ -17,13 +17,13 @@ pub enum BallEffect {
 }
 
 pub struct Point {
-    x: f32,
-    y: f32,
+    pub x: f32,
+    pub y: f32,
 }
 
 pub struct Ball {
-    coordinates : Point,
-    is_reachable : boolean, // false if it is in a tunnel for example
-    color : BallColor,
-    effect : BallEffect,
+    pub coordinates : Point,
+    pub is_reachable : bool, // false if it is in a tunnel for example
+    pub color : BallColor,
+    pub effect : BallEffect,
 }
