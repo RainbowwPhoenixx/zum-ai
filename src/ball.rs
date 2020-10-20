@@ -22,10 +22,10 @@ pub struct Point {
 }
 
 pub struct Ball {
-    pub coordinates : Point,
-    pub is_reachable : bool, // false if it is in a tunnel for example
-    pub color : BallColor,
-    pub effect : BallEffect,
+    pub coordinates: Point,
+    pub is_reachable: bool, // false if it is in a tunnel for example
+    pub color: BallColor,
+    pub effect: BallEffect,
 }
 
 pub struct BallSequence {
