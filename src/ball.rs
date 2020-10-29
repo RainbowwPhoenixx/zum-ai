@@ -1,4 +1,4 @@
-#[derive(Copy, Clone, PartialEq)]
+#[derive(Copy, Clone, PartialEq, Debug)]
 pub enum BallColor {
     Blue,
     Yellow,
@@ -8,6 +8,7 @@ pub enum BallColor {
     White,
 }
 
+#[derive(Clone, Copy, PartialEq, Debug)]
 pub enum BallEffect {
     None,
     Slow,
@@ -16,11 +17,13 @@ pub enum BallEffect {
     Visor,
 }
 
+#[derive(Clone, Copy, Debug)]
 pub struct Point {
     pub x: f32,
     pub y: f32,
 }
 
+#[derive(Debug)]
 pub struct Ball {
     pub coordinates: Point,
     pub is_reachable: bool, // false if it is in a tunnel for example
