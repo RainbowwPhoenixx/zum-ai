@@ -31,10 +31,12 @@ pub struct Ball {
     pub effect: BallEffect,
 }
 
+#[derive(Debug)]
 pub struct BallSequence {
     pub balls: Vec<Ball>,
 }
 
+#[derive(Debug)]
 pub struct GameState {
     pub groups: Vec<BallSequence>,
 }
